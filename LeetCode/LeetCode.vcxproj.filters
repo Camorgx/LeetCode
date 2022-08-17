@@ -21,6 +21,9 @@
     <ClCompile Include="OrderedStream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DeepestLeavesSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LeetCode.h">
