@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    DeepestLeavesSum::run_test();
+    MaxEqualFreq::run_test();
     return 0;
 }

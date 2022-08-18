@@ -128,9 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="DeepestLeavesSum.cpp" />
     <ClCompile Include="LeetCode.cpp" />
+    <ClCompile Include="MaxEqualFreq.cpp" />
     <ClCompile Include="OrderedStream.cpp" />
+    <ClCompile Include="TwoSum.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LeetCode.h" />
