@@ -33,9 +33,21 @@
     <ClCompile Include="MaxEqualFreq.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ListNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LeetCode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -103,8 +103,11 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>Default</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,12 +134,16 @@
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="DeepestLeavesSum.cpp" />
     <ClCompile Include="LeetCode.cpp" />
+    <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="MaxEqualFreq.cpp" />
     <ClCompile Include="OrderedStream.cpp" />
+    <ClCompile Include="TreeNode.cpp" />
     <ClCompile Include="TwoSum.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LeetCode.h" />
+    <ClInclude Include="ListNode.h" />
+    <ClInclude Include="TreeNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

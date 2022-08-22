@@ -1,44 +1,8 @@
 // https://leetcode.cn/problems/add-two-numbers/
-#include <vector>
-#include <iostream>
+#include "ListNode.h"
 
 namespace AddTwoNumbers {
 	using std::vector;
-	using std::cout, std::endl;
-
-	struct ListNode {
-		int val;
-		ListNode* next;
-		ListNode() : val(0), next(nullptr) {}
-		ListNode(int x) : val(x), next(nullptr) {}
-		ListNode(int x, ListNode* next) : val(x), next(next) {}
-	};
-
-	ListNode* generate_list(const vector<int>& data) {
-		ListNode* head = new ListNode(data[0]);
-		ListNode* p = head;
-		for (auto i = data.begin() + 1; i != data.end(); ++i) {
-			p->next = new ListNode(*i);
-			p = p->next;
-		}
-		return head;
-	}
-
-	void display_list(ListNode* head) {
-		while (head) {
-			cout << head->val;
-			head = head->next;
-		}
-		cout << endl;
-	}
-
-	void destroy_list(ListNode* head) {
-		while (head) {
-			ListNode* p = head;
-			head = head->next;
-			delete p;
-		}
-	}
 
 	class Solution {
 	public:
