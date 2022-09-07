@@ -133,10 +133,13 @@
   <ItemGroup>
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="DeepestLeavesSum.cpp" />
+    <ClCompile Include="LargestMagicSquare.cpp" />
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="ListNode.cpp" />
     <ClCompile Include="LongestIncreasingSubsequence.cpp" />
     <ClCompile Include="MaxEqualFreq.cpp" />
+    <ClCompile Include="MyCircularDeque.cpp" />
+    <ClCompile Include="MyCircularQueue.cpp" />
     <ClCompile Include="OrderedStream.cpp" />
     <ClCompile Include="TreeNode.cpp" />
     <ClCompile Include="TwoSum.cpp" />

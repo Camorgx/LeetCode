@@ -42,6 +42,15 @@
     <ClCompile Include="LongestIncreasingSubsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LargestMagicSquare.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCircularDeque.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCircularQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LeetCode.h">
