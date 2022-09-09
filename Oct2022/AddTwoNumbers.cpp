@@ -1,5 +1,5 @@
 // https://leetcode.cn/problems/add-two-numbers/
-#include "ListNode.h"
+#include "CommonStructure.h"
 
 namespace AddTwoNumbers {
 	using std::vector;

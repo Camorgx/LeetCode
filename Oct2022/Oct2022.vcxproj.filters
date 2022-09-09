@@ -15,31 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LeetCode.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="OrderedStream.cpp">
+    <ClInclude Include="Oct2022.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddTwoNumbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="DeepestLeavesSum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TwoSum.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="AddTwoNumbers.cpp">
+    <ClCompile Include="LongestIncreasingSubsequence.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MaxEqualFreq.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ListNode.cpp">
+    <ClCompile Include="OrderedStream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TreeNode.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="LongestIncreasingSubsequence.cpp">
+    <ClCompile Include="TwoSum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LargestMagicSquare.cpp">
@@ -51,16 +47,5 @@
     <ClCompile Include="MyCircularQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LeetCode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="TreeNode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ListNode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
