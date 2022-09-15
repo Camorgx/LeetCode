@@ -13,6 +13,6 @@ namespace Sept2022 {
 			int minOperations(vector<string>& logs);
 		};
 	public:
-		void run_test() override;
+		void run_test();
 	};
 }
