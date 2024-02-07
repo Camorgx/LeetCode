@@ -2,7 +2,7 @@
 
 #include <vector>
 
-// LeetCode 通用二叉树节点
+// LeetCode Common Binary Tree Node
 struct TreeNode {
     int val;
     TreeNode* left;
@@ -12,12 +12,12 @@ struct TreeNode {
     TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
 };
 
-// 使用层次遍历建立一棵二叉树
+// Build a binary tree according to LeetCode's conventions
 extern TreeNode* build_tree(const std::vector<int>& data);
 
+// Display a binary tree according to LeetCode's conventions
 extern void display_tree(TreeNode* root);
 
-// 提供二叉树的前序遍历
 extern void front_display_tree(TreeNode* root);
 
 extern void destruct_tree(TreeNode* root);
