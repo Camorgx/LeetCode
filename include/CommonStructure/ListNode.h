@@ -4,10 +4,10 @@
 
 // LeetCode 通用链表节点
 struct ListNode {
-	int val;
-	ListNode* next;
-	ListNode() : val(0), next(nullptr) {}
-	explicit ListNode(int x) : val(x), next(nullptr) {}
+    int val;
+    ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
+    explicit ListNode(int x) : val(x), next(nullptr) {}
     [[maybe_unused]] ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 

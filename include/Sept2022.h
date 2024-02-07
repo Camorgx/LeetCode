@@ -1,3 +1,5 @@
 #pragma once
 
-namespace CrawlerLogFolder { void run_test(); }
+namespace CrawlerLogFolder {
+    void run_test();
+}

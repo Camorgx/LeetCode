@@ -7,6 +7,7 @@ class MyCircularDeque {
     // tail point to the last
     unsigned head = 0, tail = 0;
     unsigned max_size = 0, actual_size = 0;
+
 public:
     explicit MyCircularDeque(int k) {
         max_size = k;
@@ -50,7 +51,7 @@ public:
     }
 
     int getRear() {
-        return isEmpty() ? -1 :  data[tail];
+        return isEmpty() ? -1 : data[tail];
     }
 
     bool isEmpty() const {

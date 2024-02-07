@@ -1,33 +1,33 @@
 #include "CommonStructure/TreeNode.h"
 
-#include <queue>
 #include <iostream>
+#include <queue>
 
-using std::vector;
-using std::queue;
 using std::cout, std::endl;
+using std::queue;
+using std::vector;
 
 TreeNode* build_tree(const vector<int>& data) {
-	queue<TreeNode*> que;
-	auto* root = new TreeNode(data[0]);
-	que.push(root);
-	int cnt = 1;
-	while (!que.empty() && cnt < data.size()) {
-		TreeNode* node = que.front();
-		que.pop();
-		if (data[cnt] != -1) {
-			node->left = new TreeNode(data[cnt]);
-			que.push(node->left);
-		}
-		++cnt;
+    queue<TreeNode*> que;
+    auto* root = new TreeNode(data[0]);
+    que.push(root);
+    int cnt = 1;
+    while (!que.empty() && cnt < data.size()) {
+        TreeNode* node = que.front();
+        que.pop();
+        if (data[cnt] != -1) {
+            node->left = new TreeNode(data[cnt]);
+            que.push(node->left);
+        }
+        ++cnt;
         if (cnt == data.size()) break;
-		if (data[cnt] != -1) {
-			node->right = new TreeNode(data[cnt]);
-			que.push(node->right);
-		}
-		++cnt;
-	}
-	return root;
+        if (data[cnt] != -1) {
+            node->right = new TreeNode(data[cnt]);
+            que.push(node->right);
+        }
+        ++cnt;
+    }
+    return root;
 }
 
 void display_tree(TreeNode* root) {
@@ -52,15 +52,15 @@ void display_tree(TreeNode* root) {
 }
 
 void front_display_tree(TreeNode* root) {
-	if (!root) return;
-	cout << root->val << ' ';
-	front_display_tree(root->left);
-	front_display_tree(root->right);
+    if (!root) return;
+    cout << root->val << ' ';
+    front_display_tree(root->left);
+    front_display_tree(root->right);
 }
 
 void destruct_tree(TreeNode* root) {
-	if (!root) return;
-	destruct_tree(root->left);
-	destruct_tree(root->right);
-	delete root;
+    if (!root) return;
+    destruct_tree(root->left);
+    destruct_tree(root->right);
+    delete root;
 }

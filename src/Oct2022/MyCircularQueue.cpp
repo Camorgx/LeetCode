@@ -8,8 +8,8 @@ class MyCircularQueue {
     unsigned head = 0, tail = 0;
     unsigned max_size = 0, actual_size = 0;
     bool full = false;
-public:
 
+public:
     explicit MyCircularQueue(int k) {
         max_size = k;
         data = new int[k + 1];

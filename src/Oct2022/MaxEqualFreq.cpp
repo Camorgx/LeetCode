@@ -1,13 +1,13 @@
 // https://leetcode.cn/problems/maximum-equal-frequency/
 
-#include <vector>
 #include <iostream>
 #include <unordered_map>
+#include <vector>
 
 namespace MaxEqualFreq {
-    using std::vector;
-    using std::unordered_map;
     using std::cout, std::endl;
+    using std::unordered_map;
+    using std::vector;
 
     class Solution {
     public:
@@ -36,10 +36,9 @@ namespace MaxEqualFreq {
     void run_test() {
         Solution solution;
         vector<vector<int>> test = {
-            { 2, 2, 1, 1, 5, 3, 3, 5 },
-            { 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5 }
-        };
-        for (auto& test_case : test)
+                {2, 2, 1, 1, 5, 3, 3, 5},
+                {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5}};
+        for (auto& test_case: test)
             cout << solution.maxEqualFreq(test_case) << endl;
     }
-}
+}// namespace MaxEqualFreq
