@@ -1,4 +1,4 @@
-#include "TreeNode.h"
+#include "CommonStructure/TreeNode.h"
 
 #include <queue>
 #include <iostream>
