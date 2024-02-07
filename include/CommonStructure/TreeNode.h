@@ -15,6 +15,8 @@ struct TreeNode {
 // 使用层次遍历建立一棵二叉树
 extern TreeNode* build_tree(const std::vector<int>& data);
 
+extern void display_tree(TreeNode* root);
+
 // 提供二叉树的前序遍历
 extern void front_display_tree(TreeNode* root);
 

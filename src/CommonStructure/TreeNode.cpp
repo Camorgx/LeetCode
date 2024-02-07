@@ -20,6 +20,7 @@ TreeNode* build_tree(const vector<int>& data) {
 			que.push(node->left);
 		}
 		++cnt;
+        if (cnt == data.size()) break;
 		if (data[cnt] != -1) {
 			node->right = new TreeNode(data[cnt]);
 			que.push(node->right);
@@ -27,6 +28,27 @@ TreeNode* build_tree(const vector<int>& data) {
 		++cnt;
 	}
 	return root;
+}
+
+void display_tree(TreeNode* root) {
+    queue<TreeNode*> que;
+    que.push(root);
+    vector<int> list;
+    while (!que.empty()) {
+        auto node = que.front();
+        que.pop();
+        list.push_back(node ? node->val : -1);
+        if (node) {
+            que.push(node->left);
+            que.push(node->right);
+        }
+    }
+    int cnt = 0;
+    for (auto i = list.rbegin(); *i == -1 && i != list.rend(); ++i)
+        ++cnt;
+    cnt = static_cast<int>(list.size()) - cnt;
+    for (int i = 0; i < cnt; ++i)
+        cout << list[i] << ' ';
 }
 
 void front_display_tree(TreeNode* root) {
