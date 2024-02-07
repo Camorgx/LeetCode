@@ -14,7 +14,7 @@ namespace TwoSum {
 				for (int j = i + 1; j < nums.size(); ++j)
 					if (nums[i] + nums[j] == target)
 						return vector<int>({ i, j });
-			return vector<int>();
+			return {};
 		}
 	};
 

@@ -2,13 +2,13 @@
 
 #include <vector>
 
-// LeetCode 通用链表节点
+// LeetCode 閫氱敤閾捐〃鑺傜偣
 struct ListNode {
 	int val;
 	ListNode* next;
 	ListNode() : val(0), next(nullptr) {}
-	ListNode(int x) : val(x), next(nullptr) {}
-	ListNode(int x, ListNode* next) : val(x), next(next) {}
+	explicit ListNode(int x) : val(x), next(nullptr) {}
+    [[maybe_unused]] ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
 extern ListNode* generate_list(const std::vector<int>& data);

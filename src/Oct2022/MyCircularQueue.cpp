@@ -10,7 +10,7 @@ class MyCircularQueue {
     bool full = false;
 public:
 
-    MyCircularQueue(int k) {
+    explicit MyCircularQueue(int k) {
         max_size = k;
         data = new int[k + 1];
     }
@@ -40,11 +40,11 @@ public:
         return isEmpty() ? -1 : data[tail];
     }
 
-    bool isEmpty() {
+    bool isEmpty() const {
         return actual_size == 0;
     }
 
-    bool isFull() {
+    bool isFull() const {
         return actual_size >= max_size;
     }
 };

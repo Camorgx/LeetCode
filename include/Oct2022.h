@@ -11,5 +11,3 @@ namespace AddTwoNumbers { void run_test(); }
 namespace MaxEqualFreq { void run_test(); }
 
 namespace LongestIncreasingSubsequence { void run_test(); }
-
-namespace MaxEqualFreq { void run_test(); }

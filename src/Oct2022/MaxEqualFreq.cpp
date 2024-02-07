@@ -12,18 +12,18 @@ namespace MaxEqualFreq {
     class Solution {
     public:
         int maxEqualFreq(vector<int>& nums) {
-            // count[i] = j ±íÊ¾Êı i ³öÏÖÁË j ´Î
-            // freq[i] = j ±íÊ¾³öÏÖ´ÎÊıÎª i µÄÊı¹²ÓĞ j ¸ö
+            // count[i] = j è¡¨ç¤ºæ•° i å‡ºç°äº† j æ¬¡
+            // freq[i] = j è¡¨ç¤ºå‡ºç°æ¬¡æ•°ä¸º i çš„æ•°å…±æœ‰ j ä¸ª
             unordered_map<int, int> count, freq;
             int max_count = 0, ans = 0;
             for (int i = 0; i < nums.size(); ++i) {
                 if (count[nums[i]]) --freq[count[nums[i]]];
                 max_count = std::max(max_count, ++count[nums[i]]);
                 ++freq[count[nums[i]]];
-                // ÈıÖÖÇé¿ö
-                // 1. ×î´ó³öÏÖ´ÎÊıÊÇ 1.
-                // 2. ËùÓĞÊıµÄ³öÏÖ´ÎÊı¾ùÎª max_count - 1, Ö»ÓĞÒ»¸öÊÇ max_count.
-                // 3. Ä³Ò»¸öÊıµÄ³öÏÖ´ÎÊıÊÇ 1, ÆäÓàÊÇ max_count.
+                // ä¸‰ç§æƒ…å†µ
+                // 1. æœ€å¤§å‡ºç°æ¬¡æ•°æ˜¯ 1.
+                // 2. æ‰€æœ‰æ•°çš„å‡ºç°æ¬¡æ•°å‡ä¸º max_count - 1, åªæœ‰ä¸€ä¸ªæ˜¯ max_count.
+                // 3. æŸä¸€ä¸ªæ•°çš„å‡ºç°æ¬¡æ•°æ˜¯ 1, å…¶ä½™æ˜¯ max_count.
                 if (max_count == 1 ||
                     (freq[max_count] == 1 && (max_count - 1) * freq[max_count - 1] + max_count == i + 1) ||
                     (freq[1] == 1 && freq[max_count] * max_count + 1 == i + 1))

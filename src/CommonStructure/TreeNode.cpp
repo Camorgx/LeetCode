@@ -9,10 +9,10 @@ using std::cout, std::endl;
 
 TreeNode* build_tree(const vector<int>& data) {
 	queue<TreeNode*> que;
-	TreeNode* root = new TreeNode(data[0]);
+	auto* root = new TreeNode(data[0]);
 	que.push(root);
 	int cnt = 1;
-	while (que.size() && cnt < data.size()) {
+	while (!que.empty() && cnt < data.size()) {
 		TreeNode* node = que.front();
 		que.pop();
 		if (data[cnt] != -1) {

@@ -6,7 +6,7 @@ using std::vector;
 using std::cout, std::endl;
 
 ListNode* generate_list(const vector<int>& data) {
-	ListNode* head = new ListNode(data[0]);
+	auto* head = new ListNode(data[0]);
 	ListNode* p = head;
 	for (auto i = data.begin() + 1; i != data.end(); ++i) {
 		p->next = new ListNode(*i);

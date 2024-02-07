@@ -2,7 +2,6 @@
 
 #include <vector>
 #include <iostream>
-#include <algorithm>
 
 #pragma warning(disable:6385)
 #pragma warning(disable:6386)
@@ -14,7 +13,7 @@ namespace LongestIncreasingSubsequence {
 	class Solution {
 	public:
 		int lengthOfLIS(vector<int>& nums) {
-			if (nums.size() == 0) return 0;
+			if (nums.empty()) return 0;
 			int* d = new int[nums.size()];
 			int len = 1;
 			d[len - 1] = nums[0];

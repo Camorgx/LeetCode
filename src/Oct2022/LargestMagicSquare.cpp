@@ -19,7 +19,7 @@ namespace LargestMagicSquare {
                     sum[i][j] = grid[i][j] + (i == 0 ? 0 : sum[i - 1][j])
                         + (j == 0 ? 0 : sum[i][j - 1]) - (i && j ? sum[i - 1][j - 1] : 0);
             
-            int ans = std::min(m, n);
+            int ans = static_cast<int>(std::min(m, n));
             for (; ans >= 1; --ans) {
                 for (int i = 0; i <= m - ans; ++i)
                     for (int j = 0; j <= n - ans; ++j) {

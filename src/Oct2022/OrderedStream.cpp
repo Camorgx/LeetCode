@@ -1,7 +1,6 @@
 // https://leetcode.cn/problems/design-an-ordered-stream/
+#include <utility>
 #include <vector>
-#include <string>
-#include <algorithm>
 #include <iostream>
 
 namespace OrderedStream {
@@ -14,9 +13,9 @@ namespace OrderedStream {
         vector<string>* data;
         int ptr, max_size;
     public:
-        OrderedStream(int n) {
+        explicit OrderedStream(int n) {
             data = new vector<string>(n + 1, "");
-            data->push_back("Init");
+            data->emplace_back("Init");
             ptr = 1;
             max_size = n;
         }
@@ -24,20 +23,20 @@ namespace OrderedStream {
         ~OrderedStream() { delete data; }
 
         vector<string> insert(int idKey, string value) {
-            (*data)[idKey] = value;
+            (*data)[idKey] = std::move(value);
             vector<string> ans;
-            while (ptr <= max_size && (*data)[ptr] != "")
+            while (ptr <= max_size && !(*data)[ptr].empty())
                 ans.emplace_back((*data)[ptr++]);
             return ans;
         }
     };
 
     void run_test() {
-        OrderedStream* order_stream = new OrderedStream(5);
+        auto* order_stream = new OrderedStream(5);
         pair<int, string> test_pair[5] = {
-            make_pair(3, "ccccc"), make_pair(1, "aaaaa"),
-            make_pair(2, "bbbbb"), make_pair(5, "eeeee"),
-            make_pair(4, "ddddd")
+            make_pair(3, "c"), make_pair(1, "a"),
+            make_pair(2, "b"), make_pair(5, "e"),
+            make_pair(4, "d")
         };
         for (const auto& i : test_pair) {
             auto res = order_stream->insert(i.first, i.second);
@@ -45,6 +44,7 @@ namespace OrderedStream {
             for (const auto& j : res) cout << '\"' << j << "\", ";
             cout << "]\n";
         }
+        delete order_stream;
     }
 }
 

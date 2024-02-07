@@ -7,7 +7,7 @@ namespace AddTwoNumbers {
 	class Solution {
 	public:
 		ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-			ListNode* head = new ListNode;
+			auto* head = new ListNode;
 			ListNode* p = head, * prev = nullptr;
 			while (l1 || l2) {
 				if (!p) p = new ListNode;

@@ -7,9 +7,8 @@ class MyCircularDeque {
     // tail point to the last
     unsigned head = 0, tail = 0;
     unsigned max_size = 0, actual_size = 0;
-    bool full = false;
 public:
-    MyCircularDeque(int k) {
+    explicit MyCircularDeque(int k) {
         max_size = k;
         data = new int[k + 1];
     }
@@ -54,11 +53,11 @@ public:
         return isEmpty() ? -1 :  data[tail];
     }
 
-    bool isEmpty() {
+    bool isEmpty() const {
         return actual_size == 0;
     }
 
-    bool isFull() {
+    bool isFull() const {
         return actual_size >= max_size;
     }
 };

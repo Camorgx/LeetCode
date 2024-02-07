@@ -2,20 +2,20 @@
 
 #include <vector>
 
-// LeetCode Í¨ÓÃ¶ş²æÊ÷½Úµã
+// LeetCode é€šç”¨äºŒå‰æ ‘èŠ‚ç‚¹
 struct TreeNode {
 	int val;
 	TreeNode* left;
 	TreeNode* right;
 	TreeNode() : val(0), left(nullptr), right(nullptr) {}
-	TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+	explicit TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 	TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
 };
 
-// Ê¹ÓÃ²ã´Î±éÀú½¨Á¢Ò»¿Ã¶ş²æÊ÷
+// ä½¿ç”¨å±‚æ¬¡éå†å»ºç«‹ä¸€æ£µäºŒå‰æ ‘
 extern TreeNode* build_tree(const std::vector<int>& data);
 
-// Ìá¹©¶ş²æÊ÷µÄÇ°Ğò±éÀú
+// æä¾›äºŒå‰æ ‘çš„å‰åºéå†
 extern void front_display_tree(TreeNode* root);
 
 extern void destruct_tree(TreeNode* root);
