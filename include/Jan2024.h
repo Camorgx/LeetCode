@@ -1,5 +1,9 @@
 #pragma once
 
 namespace CousinsInBinaryTreeII {
-    void run_test();
+    extern void run_test();
+}
+
+namespace CousinsInBinaryTree {
+    extern void run_test();
 }

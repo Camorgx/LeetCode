@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    CousinsInBinaryTreeII::run_test();
+    CousinsInBinaryTree::run_test();
     return 0;
 }

@@ -1,5 +1,5 @@
 #pragma once
 
 namespace CrawlerLogFolder {
-    void run_test();
+    extern void run_test();
 }
