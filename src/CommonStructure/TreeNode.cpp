@@ -64,3 +64,16 @@ void destruct_tree(TreeNode* root) {
     destruct_tree(root->right);
     delete root;
 }
+
+TreeNode* find(TreeNode* root, int val) {
+    queue<TreeNode*> que;
+    que.push(root);
+    while (!que.empty()) {
+        auto node = que.front();
+        que.pop();
+        if (node->val == val) return node;
+        if (node->left) que.push(node->left);
+        if (node->right) que.push(node->right);
+    }
+    return nullptr;
+}

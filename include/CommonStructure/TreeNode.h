@@ -21,3 +21,5 @@ extern void display_tree(TreeNode* root);
 extern void front_display_tree(TreeNode* root);
 
 extern void destruct_tree(TreeNode* root);
+
+extern TreeNode* find(TreeNode* root, int val);
