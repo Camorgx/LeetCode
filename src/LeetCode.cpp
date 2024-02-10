@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    LowestCommonAncestorOfABinaryTree::run_test();
+    BinaryTreeInorderTraversal::run_test();
     return 0;
 }

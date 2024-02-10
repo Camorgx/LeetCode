@@ -11,3 +11,7 @@ namespace CousinsInBinaryTree {
 namespace LowestCommonAncestorOfABinaryTree {
     extern void run_test();
 }
+
+namespace BinaryTreeInorderTraversal {
+    extern void run_test();
+}

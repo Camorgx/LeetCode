@@ -8,6 +8,7 @@ using std::queue;
 using std::vector;
 
 TreeNode* build_tree(const vector<int>& data) {
+    if (data.empty()) return nullptr;
     queue<TreeNode*> que;
     auto* root = new TreeNode(data[0]);
     que.push(root);
