@@ -15,3 +15,7 @@ namespace LowestCommonAncestorOfABinaryTree {
 namespace BinaryTreeInorderTraversal {
     extern void run_test();
 }
+
+namespace BinaryTreePreorderTraversal {
+    extern void run_test();
+}
