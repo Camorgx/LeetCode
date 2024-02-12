@@ -19,3 +19,7 @@ namespace BinaryTreeInorderTraversal {
 namespace BinaryTreePreorderTraversal {
     extern void run_test();
 }
+
+namespace BinaryTreePostorderTraversal {
+    extern void run_test();
+}
