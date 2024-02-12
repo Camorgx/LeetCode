@@ -42,9 +42,9 @@ namespace AddTwoNumbers {
             ListNode* b = generate_list(l2[i]);
             ListNode* c = solution.addTwoNumbers(a, b);
             display_list(c);
-            destroy_list(a);
-            destroy_list(b);
-            destroy_list(c);
+            destruct_list(a);
+            destruct_list(b);
+            destruct_list(c);
         }
     }
 }// namespace AddTwoNumbers

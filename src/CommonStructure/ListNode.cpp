@@ -23,7 +23,7 @@ void display_list(ListNode* head) {
     cout << endl;
 }
 
-void destroy_list(ListNode* head) {
+void destruct_list(ListNode* head) {
     while (head) {
         ListNode* p = head;
         head = head->next;

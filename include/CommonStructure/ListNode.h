@@ -15,4 +15,4 @@ extern ListNode* generate_list(const std::vector<int>& data);
 
 extern void display_list(ListNode* head);
 
-extern void destroy_list(ListNode* head);
+extern void destruct_list(ListNode* head);
