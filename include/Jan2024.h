@@ -23,3 +23,7 @@ namespace BinaryTreePreorderTraversal {
 namespace BinaryTreePostorderTraversal {
     extern void run_test();
 }
+
+namespace VerticalOrderTraversalOfABinaryTree {
+    extern void run_test();
+}
