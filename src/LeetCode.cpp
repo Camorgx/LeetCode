@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    BinaryTreeLevelOrderTraversal::run_test();
+    BinaryTreeLevelOrderTraversalII::run_test();
     return 0;
 }

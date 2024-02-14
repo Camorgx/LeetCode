@@ -31,3 +31,7 @@ namespace VerticalOrderTraversalOfABinaryTree {
 namespace BinaryTreeLevelOrderTraversal {
     extern void run_test();
 }
+
+namespace BinaryTreeLevelOrderTraversalII {
+    extern void run_test();
+}
