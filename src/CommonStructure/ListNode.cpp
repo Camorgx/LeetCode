@@ -1,4 +1,4 @@
-#include "CommonStructure/ListNode.h"
+#include "Common/ListNode.h"
 
 #include <iostream>
 

@@ -1,5 +1,5 @@
 // https://leetcode.cn/problems/deepest-leaves-sum/
-#include "CommonStructure.h"
+#include "Common.h"
 
 #include <iostream>
 

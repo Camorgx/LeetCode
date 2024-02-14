@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    VerticalOrderTraversalOfABinaryTree::run_test();
+    BinaryTreeLevelOrderTraversal::run_test();
     return 0;
 }

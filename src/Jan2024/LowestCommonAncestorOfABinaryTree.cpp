@@ -1,5 +1,5 @@
 // https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
-#include "CommonStructure.h"
+#include "Common.h"
 
 #include <iostream>
 

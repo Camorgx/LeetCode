@@ -1,5 +1,5 @@
 // https://leetcode.cn/problems/binary-tree-preorder-traversal/
-#include "CommonStructure.h"
+#include "Common.h"
 
 #include <iostream>
 

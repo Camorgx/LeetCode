@@ -1,5 +1,5 @@
 // https://leetcode.cn/problems/cousins-in-binary-tree/
-#include "CommonStructure.h"
+#include "Common.h"
 
 #include <iostream>
 #include <queue>

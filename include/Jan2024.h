@@ -27,3 +27,7 @@ namespace BinaryTreePostorderTraversal {
 namespace VerticalOrderTraversalOfABinaryTree {
     extern void run_test();
 }
+
+namespace BinaryTreeLevelOrderTraversal {
+    extern void run_test();
+}

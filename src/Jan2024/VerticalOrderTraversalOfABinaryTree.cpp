@@ -1,6 +1,6 @@
 // https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/
 
-#include "CommonStructure.h"
+#include "Common.h"
 
 #include <algorithm>
 #include <iostream>

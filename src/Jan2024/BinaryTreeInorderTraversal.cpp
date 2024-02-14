@@ -1,5 +1,5 @@
 // https://leetcode.cn/problems/binary-tree-inorder-traversal/
-#include "CommonStructure.h"
+#include "Common.h"
 
 #include <iostream>
 
