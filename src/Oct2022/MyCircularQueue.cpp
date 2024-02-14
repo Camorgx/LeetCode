@@ -7,7 +7,7 @@ class MyCircularQueue {
     // tail point to the last
     unsigned head = 0, tail = 0;
     unsigned max_size = 0, actual_size = 0;
-    bool full = false;
+    [[maybe_unused]] bool full = false;
 
 public:
     explicit MyCircularQueue(int k) {
