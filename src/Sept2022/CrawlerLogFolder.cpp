@@ -24,9 +24,9 @@ namespace CrawlerLogFolder {
     void run_test() {
         vector<vector<string>> tests = {
                 {"d1/", "d2/", "../", "d21/", "./"},
-                {"d1/", "d2/", "./", "d3/", "../", "d31/"},
+                {"d1/", "d2/", "./",  "d3/",  "../", "d31/"},
                 {"d1/", "../", "../", "../"},
-                {"./", "../", "./"}};
+                {"./",  "../", "./"}};
         Solution solution;
         for (auto& test: tests)
             cout << solution.minOperations(test) << endl;

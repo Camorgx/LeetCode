@@ -37,7 +37,8 @@ namespace OrderedStream {
         pair<int, string> test_pair[5] = {
                 make_pair(3, "c"), make_pair(1, "a"),
                 make_pair(2, "b"), make_pair(5, "e"),
-                make_pair(4, "d")};
+                make_pair(4, "d")
+        };
         for (const auto& i: test_pair) {
             auto res = order_stream->insert(i.first, i.second);
             cout << '[';

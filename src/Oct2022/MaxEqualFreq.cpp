@@ -24,9 +24,9 @@ namespace MaxEqualFreq {
                 // 1. Showing up no more than 1 time.
                 // 2. Every other number shows up max_count - 1 times, except one max_count times.
                 // 3. A certain number shows up 1 time, while the others max_count.
-                if (max_count == 1 ||
-                    (freq[max_count] == 1 && (max_count - 1) * freq[max_count - 1] + max_count == i + 1) ||
-                    (freq[1] == 1 && freq[max_count] * max_count + 1 == i + 1))
+                if (max_count == 1
+                    || (freq[max_count] == 1 && (max_count - 1) * freq[max_count - 1] + max_count == i + 1)
+                    || (freq[1] == 1 && freq[max_count] * max_count + 1 == i + 1))
                     ans = std::max(ans, i + 1);
             }
             return ans;

@@ -9,12 +9,14 @@ namespace DeepestLeavesSum {
 
     class Solution {
         int max_depth = 1, max_sum = 0;
+
         void _deepest_sum(TreeNode* node, int depth) {
             if (!node) return;
             if (depth > max_depth) {
                 max_depth = depth;
                 max_sum = node->val;
-            } else if (depth == max_depth)
+            }
+            else if (depth == max_depth)
                 max_sum += node->val;
             _deepest_sum(node->left, depth + 1);
             _deepest_sum(node->right, depth + 1);

@@ -11,6 +11,7 @@ namespace VerticalOrderTraversalOfABinaryTree {
 
     class Solution {
         using tuple_vec = vector<std::tuple<int, int, int>>;
+
         void dfs(tuple_vec& vec, TreeNode* node, int col, int row) {
             if (!node) return;
             vec.emplace_back(col, row, node->val);
@@ -41,7 +42,8 @@ namespace VerticalOrderTraversalOfABinaryTree {
         vector<std::string> testCases = {
                 "[3,9,20,null,null,15,7]",
                 "[1,2,3,4,5,6,7]",
-                "[1,2,3,4,6,5,7]"};
+                "[1,2,3,4,6,5,7]"
+        };
         for (const auto& test: testCases) {
             auto&& data = vectorDeserializer1d(test);
             auto tree = build_tree(data);

@@ -34,8 +34,8 @@ namespace LongestIncreasingSubsequence {
     void run_test() {
         vector<vector<int>> tests = {
                 {10, 9, 2, 5, 3, 7, 101, 18},
-                {0, 1, 0, 3, 2, 3},
-                {7, 7, 7, 7, 7, 7, 7}};
+                {0,  1, 0, 3, 2, 3},
+                {7,  7, 7, 7, 7, 7, 7}};
         Solution solution;
         for (auto& test: tests)
             cout << solution.lengthOfLIS(test) << endl;
