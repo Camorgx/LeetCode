@@ -35,3 +35,7 @@ namespace BinaryTreeLevelOrderTraversal {
 namespace BinaryTreeLevelOrderTraversalII {
     extern void run_test();
 }
+
+namespace BinaryTreeZigzagLevelOrderTraversal {
+    extern void run_test();
+}
