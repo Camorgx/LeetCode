@@ -52,3 +52,12 @@ std::vector<int> vectorDeserializer1d(const std::string_view& str) {
     }
     return res;
 }
+
+template <>
+std::string join<std::string>(const std::vector<std::string>& items, const std::string& s) {
+    if (items.empty()) return "[]";
+    std::string res = "[";
+    for (auto&& item: items)
+        res += item + s;
+    return res.substr(0, res.length() - s.length()) + ']';
+}

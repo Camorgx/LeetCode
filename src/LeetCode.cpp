@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    BinaryTreeZigzagLevelOrderTraversal::run_test();
+    NAryTreeLevelOrderTraversal::run_test();
     return 0;
 }
