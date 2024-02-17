@@ -29,7 +29,7 @@ namespace NAryTreeLevelOrderTraversal {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<std::string> testCases = {
                 "[1,null,3,2,4,null,5,6]",

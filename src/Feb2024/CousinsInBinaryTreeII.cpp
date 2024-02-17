@@ -79,7 +79,7 @@ namespace CousinsInBinaryTreeII {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         BetterSolution betterSolution;
         std::vector<std::vector<int>> test_cases = {
@@ -92,16 +92,16 @@ namespace CousinsInBinaryTreeII {
                         -1, -1, -1, 68, 63, -1, 467, -1, 274, -1, -1, -1, -1, -1, 920, -1, 300
                 }};
         for (const auto& test: test_cases) {
-            auto tree = build_tree(test);
+            auto tree = buildBinaryTree(test);
             auto res = solution.replaceValueInTree(tree);
-            display_tree(res);
+            displayTree(res);
             std::cout << std::endl;
-            destruct_tree(res);
-            tree = build_tree(test);
+            destructTree(res);
+            tree = buildBinaryTree(test);
             res = betterSolution.replaceValueInTree(tree);
-            display_tree(res);
+            displayTree(res);
             std::cout << std::endl;
-            destruct_tree(res);
+            destructTree(res);
         }
     }
 }// namespace CousinsInBinaryTreeII

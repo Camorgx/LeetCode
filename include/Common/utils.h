@@ -12,7 +12,7 @@ extern std::vector<std::string_view> stringSplit(
         const std::string& delim
 );
 
-extern std::vector<int> vectorDeserializer1d(const std::string_view& str);
+extern std::vector<int> deserializeVector1d(const std::string_view& str);
 
 template <typename T>
 std::string join(const std::vector<T>& items, const std::string& s) {

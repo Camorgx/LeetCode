@@ -18,7 +18,7 @@ namespace TwoSum {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
 
         vector<int> set1 = {2, 7, 11, 15};

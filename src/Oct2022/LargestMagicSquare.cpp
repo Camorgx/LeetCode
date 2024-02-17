@@ -54,7 +54,7 @@ namespace LargestMagicSquare {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<vector<int>> test = {
                 {7, 1, 4, 5, 6},

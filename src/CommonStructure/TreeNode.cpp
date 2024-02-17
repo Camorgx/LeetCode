@@ -7,7 +7,7 @@ using std::cout, std::endl;
 using std::queue;
 using std::vector;
 
-TreeNode* build_tree(const vector<int>& data) {
+TreeNode* buildBinaryTree(const std::vector<int>& data) {
     if (data.empty()) return nullptr;
     queue<TreeNode*> que;
     auto* root = new TreeNode(data[0]);
@@ -31,7 +31,7 @@ TreeNode* build_tree(const vector<int>& data) {
     return root;
 }
 
-void display_tree(TreeNode* root) {
+void displayTree(TreeNode* root) {
     queue<TreeNode*> que;
     que.push(root);
     vector<int> list;
@@ -52,17 +52,17 @@ void display_tree(TreeNode* root) {
         cout << list[i] << ' ';
 }
 
-void front_display_tree(TreeNode* root) {
+void frontDisplayTree(TreeNode* root) {
     if (!root) return;
     cout << root->val << ' ';
-    front_display_tree(root->left);
-    front_display_tree(root->right);
+    frontDisplayTree(root->left);
+    frontDisplayTree(root->right);
 }
 
-void destruct_tree(TreeNode* root) {
+void destructTree(TreeNode* root) {
     if (!root) return;
-    destruct_tree(root->left);
-    destruct_tree(root->right);
+    destructTree(root->left);
+    destructTree(root->right);
     delete root;
 }
 

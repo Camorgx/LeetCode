@@ -33,7 +33,7 @@ namespace MaxEqualFreq {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<vector<int>> test = {
                 {2, 2, 1, 1, 5, 3, 3, 5},

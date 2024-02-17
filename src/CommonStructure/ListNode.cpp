@@ -5,7 +5,7 @@
 using std::cout, std::endl;
 using std::vector;
 
-ListNode* generate_list(const vector<int>& data) {
+ListNode* generateList(const std::vector<int>& data) {
     auto* head = new ListNode(data[0]);
     ListNode* p = head;
     for (auto i = data.begin() + 1; i != data.end(); ++i) {
@@ -15,7 +15,7 @@ ListNode* generate_list(const vector<int>& data) {
     return head;
 }
 
-void display_list(ListNode* head) {
+void displayList(ListNode* head) {
     while (head) {
         cout << head->val;
         head = head->next;
@@ -23,7 +23,7 @@ void display_list(ListNode* head) {
     cout << endl;
 }
 
-void destruct_list(ListNode* head) {
+void destructList(ListNode* head) {
     while (head) {
         ListNode* p = head;
         head = head->next;

@@ -1,25 +1,25 @@
 #pragma once
 
 namespace OrderedStream {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace DeepestLeavesSum {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace TwoSum {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace AddTwoNumbers {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace MaxEqualFreq {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace LongestIncreasingSubsequence {
-    extern void run_test();
+    extern void runTest();
 }

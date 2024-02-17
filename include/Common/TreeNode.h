@@ -16,13 +16,13 @@ struct TreeNode {
 };
 
 // Build a binary tree according to LeetCode's conventions
-extern TreeNode* build_tree(const std::vector<int>& data);
+extern TreeNode* buildBinaryTree(const std::vector<int>& data);
 
 // Display a binary tree according to LeetCode's conventions
-extern void display_tree(TreeNode* root);
+extern void displayTree(TreeNode* root);
 
-extern void front_display_tree(TreeNode* root);
+extern void frontDisplayTree(TreeNode* root);
 
-extern void destruct_tree(TreeNode* root);
+extern void destructTree(TreeNode* root);
 
 extern TreeNode* find(TreeNode* root, int val);

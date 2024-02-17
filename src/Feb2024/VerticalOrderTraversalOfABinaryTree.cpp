@@ -37,7 +37,7 @@ namespace VerticalOrderTraversalOfABinaryTree {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<std::string> testCases = {
                 "[3,9,20,null,null,15,7]",
@@ -45,11 +45,11 @@ namespace VerticalOrderTraversalOfABinaryTree {
                 "[1,2,3,4,6,5,7]"
         };
         for (const auto& test: testCases) {
-            auto&& data = vectorDeserializer1d(test);
-            auto tree = build_tree(data);
+            auto&& data = deserializeVector1d(test);
+            auto tree = buildBinaryTree(data);
             auto&& res = solution.verticalTraversal(tree);
             std::cout << serialize(res) << std::endl;
-            destruct_tree(tree);
+            destructTree(tree);
         }
     }
 }// namespace VerticalOrderTraversalOfABinaryTree

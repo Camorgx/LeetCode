@@ -24,7 +24,7 @@ namespace LowestCommonAncestorOfABinaryTree {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         std::vector<std::tuple<std::vector<int>, int, int>> test_cases = {
                 {{3, 5, 1, 6, 2, 0, 8, -1, -1, 7, 4}, 5, 1},
@@ -32,11 +32,11 @@ namespace LowestCommonAncestorOfABinaryTree {
                 {{1, 2},                              1, 2},
         };
         for (auto&& [data, p_val, q_val]: test_cases) {
-            auto tree = build_tree(data);
+            auto tree = buildBinaryTree(data);
             auto p = find(tree, p_val);
             auto q = find(tree, q_val);
             std::cout << solution.lowestCommonAncestor(tree, p, q)->val << std::endl;
-            destruct_tree(tree);
+            destructTree(tree);
         }
     }
 }// namespace LowestCommonAncestorOfABinaryTree

@@ -37,7 +37,7 @@ std::vector<std::string_view> stringSplit(const std::string_view& str, const std
     return elems;
 }
 
-std::vector<int> vectorDeserializer1d(const std::string_view& str) {
+std::vector<int> deserializeVector1d(const std::string_view& str) {
     auto s = str.substr(1, str.length() - 2);
     auto&& items = stringSplit(s, ",");
     std::vector<int> res;

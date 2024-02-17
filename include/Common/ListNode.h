@@ -14,8 +14,8 @@ struct ListNode {
     ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
-extern ListNode* generate_list(const std::vector<int>& data);
+extern ListNode* generateList(const std::vector<int>& data);
 
-extern void display_list(ListNode* head);
+extern void displayList(ListNode* head);
 
-extern void destruct_list(ListNode* head);
+extern void destructList(ListNode* head);

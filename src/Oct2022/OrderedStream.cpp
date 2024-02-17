@@ -32,7 +32,7 @@ namespace OrderedStream {
         }
     };
 
-    void run_test() {
+    void runTest() {
         auto* order_stream = new OrderedStream(5);
         pair<int, string> test_pair[5] = {
                 make_pair(3, "c"), make_pair(1, "a"),

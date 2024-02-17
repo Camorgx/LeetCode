@@ -22,7 +22,7 @@ namespace BinaryTreeInorderTraversal {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<vector<int>> test_cases = {
                 {1, -1, 2, 3},
@@ -30,11 +30,11 @@ namespace BinaryTreeInorderTraversal {
                 {1},
         };
         for (auto&& data: test_cases) {
-            auto tree = build_tree(data);
+            auto tree = buildBinaryTree(data);
             auto&& res = solution.inorderTraversal(tree);
             for (int x: res) std::cout << x << ' ';
             std::cout << std::endl;
-            destruct_tree(tree);
+            destructTree(tree);
         }
     }
 }// namespace BinaryTreeInorderTraversal

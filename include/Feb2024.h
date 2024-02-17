@@ -1,45 +1,45 @@
 #pragma once
 
 namespace CousinsInBinaryTreeII {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace CousinsInBinaryTree {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace LowestCommonAncestorOfABinaryTree {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace BinaryTreeInorderTraversal {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace BinaryTreePreorderTraversal {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace BinaryTreePostorderTraversal {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace VerticalOrderTraversalOfABinaryTree {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace BinaryTreeLevelOrderTraversal {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace BinaryTreeLevelOrderTraversalII {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace BinaryTreeZigzagLevelOrderTraversal {
-    extern void run_test();
+    extern void runTest();
 }
 
 namespace NAryTreeLevelOrderTraversal {
-    extern void run_test();
+    extern void runTest();
 }

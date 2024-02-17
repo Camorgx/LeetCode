@@ -27,7 +27,7 @@ namespace AddTwoNumbers {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<vector<int>> l1 = {
                 {2, 4, 3},
@@ -38,13 +38,13 @@ namespace AddTwoNumbers {
                 {0},
                 {9, 9, 9, 9}};
         for (int i = 0; i < 3; ++i) {
-            ListNode* a = generate_list(l1[i]);
-            ListNode* b = generate_list(l2[i]);
+            ListNode* a = generateList(l1[i]);
+            ListNode* b = generateList(l2[i]);
             ListNode* c = solution.addTwoNumbers(a, b);
-            display_list(c);
-            destruct_list(a);
-            destruct_list(b);
-            destruct_list(c);
+            displayList(c);
+            destructList(a);
+            destructList(b);
+            destructList(c);
         }
     }
 }// namespace AddTwoNumbers

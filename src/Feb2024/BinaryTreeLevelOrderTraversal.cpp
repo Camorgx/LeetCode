@@ -27,7 +27,7 @@ namespace BinaryTreeLevelOrderTraversal {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<std::string> testCases = {
                 "[3,9,20,null,null,15,7]",
@@ -35,10 +35,10 @@ namespace BinaryTreeLevelOrderTraversal {
                 "[]"
         };
         for (const auto& test: testCases) {
-            auto tree = build_tree(vectorDeserializer1d(test));
+            auto tree = buildBinaryTree(deserializeVector1d(test));
             auto&& res = solution.levelOrder(tree);
             std::cout << serialize(res) << std::endl;
-            destruct_tree(tree);
+            destructTree(tree);
         }
     }
 }// namespace BinaryTreeLevelOrderTraversal

@@ -31,21 +31,21 @@ namespace DeepestLeavesSum {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
 
         vector<int> set1 = {1, 2, 3, 4, 5, -1, 6, 7, -1, -1, -1, -1, 8};
-        TreeNode* root1 = build_tree(set1);
-        front_display_tree(root1);
+        TreeNode* root1 = buildBinaryTree(set1);
+        frontDisplayTree(root1);
         cout << endl;
         cout << solution.deepestLeavesSum(root1) << endl;
-        destruct_tree(root1);
+        destructTree(root1);
 
         vector<int> set2 = {6, 7, 8, 2, 7, 1, 3, 9, -1, 1, 4, -1, -1, -1, 5};
-        TreeNode* root2 = build_tree(set2);
-        front_display_tree(root2);
+        TreeNode* root2 = buildBinaryTree(set2);
+        frontDisplayTree(root2);
         cout << endl;
         cout << solution.deepestLeavesSum(root2) << endl;
-        destruct_tree(root2);
+        destructTree(root2);
     }
 }// namespace DeepestLeavesSum

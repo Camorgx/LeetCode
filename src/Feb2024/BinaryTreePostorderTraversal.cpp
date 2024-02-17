@@ -22,18 +22,18 @@ namespace BinaryTreePostorderTraversal {
         }
     };
 
-    void run_test() {
+    void runTest() {
         Solution solution;
         vector<vector<int>> test_cases = {
                 {1, -1, 2, 3},
                 {},
                 {1}};
         for (auto&& test: test_cases) {
-            auto tree = build_tree(test);
+            auto tree = buildBinaryTree(test);
             auto&& res = solution.postorderTraversal(tree);
             for (int x: res) std::cout << x << ' ';
             std::cout << std::endl;
-            destruct_tree(tree);
+            destructTree(tree);
         }
     }
 }// namespace BinaryTreePostorderTraversal
