@@ -26,3 +26,7 @@ extern void frontDisplayTree(TreeNode* root);
 extern void destructTree(TreeNode* root);
 
 extern TreeNode* find(TreeNode* root, int val);
+
+extern TreeNode* deserializeTreeNode(const std::string& str);
+
+extern std::string serialize(TreeNode* root);

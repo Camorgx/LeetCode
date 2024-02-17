@@ -43,7 +43,8 @@ namespace BinaryTreeZigzagLevelOrderTraversal {
                 "[]"
         };
         for (const auto& test: testCases) {
-            auto tree = buildBinaryTree(deserializeVector1d(test));
+            auto tree = deserializeTreeNode(test);
+            std::cout << serialize(tree) << std::endl;
             auto&& res = solution.zigzagLevelOrder(tree);
             std::cout << serialize(res) << std::endl;
             destructTree(tree);

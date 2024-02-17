@@ -1,4 +1,5 @@
 #include "Common/TreeNode.h"
+#include "Common/utils.h"
 
 #include <iostream>
 #include <queue>
@@ -77,4 +78,49 @@ TreeNode* find(TreeNode* root, int val) {
         if (node->right) que.push(node->right);
     }
     return nullptr;
+}
+
+TreeNode* deserializeTreeNode(const std::string& str) {
+    if (str == "[]") return nullptr;
+    auto s = str.substr(1, str.length() - 2);
+    auto&& items = stringSplit(s, ",");
+    queue<TreeNode*> que;
+    auto* root = new TreeNode(std::stoi(std::string(items[0])));
+    que.push(root);
+    int cnt = 1;
+    while (!que.empty() && cnt < items.size()) {
+        TreeNode* node = que.front();
+        que.pop();
+        if (items[cnt] != "null") {
+            node->left = new TreeNode(std::stoi(std::string(items[cnt])));
+            que.push(node->left);
+        }
+        ++cnt;
+        if (cnt == items.size()) break;
+        if (items[cnt] != "null") {
+            node->right = new TreeNode(std::stoi(std::string(items[cnt])));
+            que.push(node->right);
+        }
+        ++cnt;
+    }
+    return root;
+}
+
+std::string serialize(TreeNode* root) {
+    if (!root) return "[]";
+    queue<TreeNode*> que;
+    que.push(root);
+    vector<std::string> items;
+    while (!que.empty()) {
+        auto node = que.front();
+        que.pop();
+        items.emplace_back(node ? std::to_string(node->val) : "null");
+        if (node) {
+            que.push(node->left);
+            que.push(node->right);
+        }
+    }
+    for (int i = static_cast<int>(items.size()) - 1; i >= 0 && items[i] == "null"; --i)
+        items.pop_back();
+    return '[' + join(items, ",") + ']';
 }

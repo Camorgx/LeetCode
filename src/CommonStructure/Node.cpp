@@ -20,7 +20,7 @@ std::string serialize(Node* root) {
     }
     for (int i = static_cast<int>(items.size()) - 1; i >= 0 && items[i] == "null"; --i)
         items.pop_back();
-    return join(items, ",");
+    return '[' + join(items, ",") + ']';
 }
 
 Node* deserializeNode(const std::string& str) {

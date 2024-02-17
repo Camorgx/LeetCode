@@ -42,12 +42,9 @@ std::vector<int> deserializeVector1d(const std::string_view& str) {
     auto&& items = stringSplit(s, ",");
     std::vector<int> res;
     for (const auto& item: items) {
-        std::stringstream stream;
-        stream << item;
         int val;
         if (item == "null") val = -1;
-        else
-            stream >> val;
+        else val = std::stoi(std::string(item));
         res.push_back(val);
     }
     return res;
@@ -55,9 +52,9 @@ std::vector<int> deserializeVector1d(const std::string_view& str) {
 
 template <>
 std::string join<std::string>(const std::vector<std::string>& items, const std::string& s) {
-    if (items.empty()) return "[]";
-    std::string res = "[";
+    if (items.empty()) return "";
+    std::string res = "";
     for (auto&& item: items)
         res += item + s;
-    return res.substr(0, res.length() - s.length()) + ']';
+    return res.substr(0, res.length() - s.length());
 }
