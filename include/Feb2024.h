@@ -43,3 +43,7 @@ namespace BinaryTreeZigzagLevelOrderTraversal {
 namespace NAryTreeLevelOrderTraversal {
     extern void runTest();
 }
+
+namespace NAryTreePreorderTraversal {
+    extern void runTest();
+}
