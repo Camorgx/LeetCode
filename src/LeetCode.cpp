@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    NAryTreePreorderTraversal::runTest();
+    NAryTreePostorderTraversal::runTest();
     return 0;
 }

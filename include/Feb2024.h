@@ -47,3 +47,7 @@ namespace NAryTreeLevelOrderTraversal {
 namespace NAryTreePreorderTraversal {
     extern void runTest();
 }
+
+namespace NAryTreePostorderTraversal {
+    extern void runTest();
+}
