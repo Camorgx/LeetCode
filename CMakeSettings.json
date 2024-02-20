@@ -8,7 +8,9 @@
       "installRoot": "${projectDir}\\out\\install\\${name}",
       "cmakeCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x64_x64" ],
+      "inheritEnvironments": [
+        "clang_cl_x64_x64"
+      ],
       "intelliSenseMode": "windows-clang-x64"
     }
   ]

@@ -25,9 +25,9 @@ namespace BinaryTreeInorderTraversal {
     void runTest() {
         Solution solution;
         vector<vector<int>> test_cases = {
-                {1, -1, 2, 3},
-                {},
-                {1},
+            {1, -1, 2, 3},
+            {},
+            {1},
         };
         for (auto&& data: test_cases) {
             auto tree = buildBinaryTree(data);

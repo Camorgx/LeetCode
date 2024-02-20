@@ -36,8 +36,8 @@ namespace MaxEqualFreq {
     void runTest() {
         Solution solution;
         vector<vector<int>> test = {
-                {2, 2, 1, 1, 5, 3, 3, 5},
-                {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5}};
+            {2, 2, 1, 1, 5, 3, 3, 5},
+            {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5}};
         for (auto& test_case: test)
             cout << solution.maxEqualFreq(test_case) << endl;
     }

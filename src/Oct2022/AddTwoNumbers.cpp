@@ -30,13 +30,13 @@ namespace AddTwoNumbers {
     void runTest() {
         Solution solution;
         vector<vector<int>> l1 = {
-                {2, 4, 3},
-                {0},
-                {9, 9, 9, 9, 9, 9, 9}};
+            {2, 4, 3},
+            {0},
+            {9, 9, 9, 9, 9, 9, 9}};
         vector<vector<int>> l2 = {
-                {5, 6, 4},
-                {0},
-                {9, 9, 9, 9}};
+            {5, 6, 4},
+            {0},
+            {9, 9, 9, 9}};
         for (int i = 0; i < 3; ++i) {
             ListNode* a = generateList(l1[i]);
             ListNode* b = generateList(l2[i]);

@@ -25,9 +25,9 @@ namespace BinaryTreePostorderTraversal {
     void runTest() {
         Solution solution;
         vector<vector<int>> test_cases = {
-                {1, -1, 2, 3},
-                {},
-                {1}};
+            {1, -1, 2, 3},
+            {},
+            {1}};
         for (auto&& test: test_cases) {
             auto tree = buildBinaryTree(test);
             auto&& res = solution.postorderTraversal(tree);

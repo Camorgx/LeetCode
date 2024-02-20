@@ -38,9 +38,9 @@ namespace BinaryTreeZigzagLevelOrderTraversal {
     void runTest() {
         Solution solution;
         vector<std::string> testCases = {
-                "[3,9,20,null,null,15,7]",
-                "[1]",
-                "[]"
+            "[3,9,20,null,null,15,7]",
+            "[1]",
+            "[]"
         };
         for (const auto& test: testCases) {
             auto tree = deserializeTreeNode(test);

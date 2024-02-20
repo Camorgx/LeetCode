@@ -17,12 +17,12 @@ namespace ConstructBinaryTreeFromPreorderAndInorderTraversal {
             auto inRoot = nodeMap[*preLeft];
             int leftTreeNodeNum = inRoot - inLeft;
             root->left = build(
-                    preLeft + 1, preLeft + leftTreeNodeNum,
-                    inLeft, inRoot - 1
+                preLeft + 1, preLeft + leftTreeNodeNum,
+                inLeft, inRoot - 1
             );
             root->right = build(
-                    preLeft + leftTreeNodeNum + 1, preRight,
-                    inRoot + 1, inRight
+                preLeft + leftTreeNodeNum + 1, preRight,
+                inRoot + 1, inRight
             );
             return root;
         }
@@ -33,8 +33,8 @@ namespace ConstructBinaryTreeFromPreorderAndInorderTraversal {
             for (auto val = inorder.begin(); val != inorder.end(); ++val)
                 nodeMap[*val] = val;
             return build(
-                    preorder.begin(), preorder.end() - 1,
-                    inorder.begin(), inorder.end() - 1
+                preorder.begin(), preorder.end() - 1,
+                inorder.begin(), inorder.end() - 1
             );
         }
     };
@@ -42,8 +42,8 @@ namespace ConstructBinaryTreeFromPreorderAndInorderTraversal {
     void runTest() {
         Solution solution;
         vector<std::tuple<std::string, std::string>> testCases = {
-                {"[3,9,20,15,7]", "[9,3,15,20,7]"},
-                {"[-1]",          "[-1]"}
+            {"[3,9,20,15,7]", "[9,3,15,20,7]"},
+            {"[-1]",          "[-1]"}
         };
         for (auto&& [preorder, inorder]: testCases) {
             auto pre = deserializeVector1d(preorder);

@@ -8,8 +8,8 @@ extern std::string serialize(const std::vector<int>& vec);
 extern std::string serialize(const std::vector<std::vector<int>>& vec);
 
 extern std::vector<std::string_view> stringSplit(
-        const std::string_view& str,
-        const std::string& delim
+    const std::string_view& str,
+    const std::string& delim
 );
 
 extern std::vector<int> deserializeVector1d(const std::string_view& str);
@@ -25,6 +25,6 @@ extern std::string join(const std::vector<T>& items, const std::string& s) {
 
 template <>
 std::string join<std::string>(
-        const std::vector<std::string>& items,
-        const std::string& s
+    const std::vector<std::string>& items,
+    const std::string& s
 );

@@ -40,9 +40,9 @@ namespace VerticalOrderTraversalOfABinaryTree {
     void runTest() {
         Solution solution;
         vector<std::string> testCases = {
-                "[3,9,20,null,null,15,7]",
-                "[1,2,3,4,5,6,7]",
-                "[1,2,3,4,6,5,7]"
+            "[3,9,20,null,null,15,7]",
+            "[1,2,3,4,5,6,7]",
+            "[1,2,3,4,6,5,7]"
         };
         for (const auto& test: testCases) {
             auto&& data = deserializeVector1d(test);

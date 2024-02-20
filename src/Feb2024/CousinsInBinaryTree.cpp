@@ -45,9 +45,9 @@ namespace CousinsInBinaryTree {
     void runTest() {
         Solution solution;
         std::vector<std::tuple<std::vector<int>, int, int>> test_cases = {
-                {{1, 2, 3, 4},            4, 3},
-                {{1, 2, 3, -1, 4, -1, 5}, 5, 4},
-                {{1, 2, 3, -1, 4},        2, 3}};
+            {{1, 2, 3, 4},            4, 3},
+            {{1, 2, 3, -1, 4, -1, 5}, 5, 4},
+            {{1, 2, 3, -1, 4},        2, 3}};
         for (auto&& [data, x, y]: test_cases) {
             auto tree = buildBinaryTree(data);
             std::cout << solution.isCousins(tree, x, y) << std::endl;

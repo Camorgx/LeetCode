@@ -57,10 +57,10 @@ namespace LargestMagicSquare {
     void runTest() {
         Solution solution;
         vector<vector<int>> test = {
-                {7, 1, 4, 5, 6},
-                {2, 5, 1, 6, 4},
-                {1, 5, 4, 3, 2},
-                {1, 2, 7, 3, 4}};
+            {7, 1, 4, 5, 6},
+            {2, 5, 1, 6, 4},
+            {1, 5, 4, 3, 2},
+            {1, 2, 7, 3, 4}};
         int ans = solution.largestMagicSquare(test);
         cout << ans << endl;
     }
