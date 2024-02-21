@@ -55,3 +55,7 @@ namespace NAryTreePostorderTraversal {
 namespace ConstructBinaryTreeFromPreorderAndInorderTraversal {
     extern void runTest();
 }
+
+namespace ConstructBinaryTreeFromInorderAndPostorderTraversal {
+    extern void runTest();
+}
