@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    ConstructBinaryTreeFromInorderAndPostorderTraversal::runTest();
+    ConstructBinaryTreeFromPreorderAndPostorderTraversal::runTest();
     return 0;
 }
