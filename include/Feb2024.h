@@ -63,3 +63,7 @@ namespace ConstructBinaryTreeFromInorderAndPostorderTraversal {
 namespace ConstructBinaryTreeFromPreorderAndPostorderTraversal {
     extern void runTest();
 }
+
+namespace KthLargestSumInABinaryTree {
+    extern void runTest();
+}

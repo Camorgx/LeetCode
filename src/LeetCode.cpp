@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    ConstructBinaryTreeFromPreorderAndPostorderTraversal::runTest();
+    KthLargestSumInABinaryTree::runTest();
     return 0;
 }
