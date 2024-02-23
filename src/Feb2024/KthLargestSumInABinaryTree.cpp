@@ -1,6 +1,7 @@
 // https://leetcode.cn/problems/kth-largest-sum-in-a-binary-tree/
 #include "Common.h"
 
+#include <algorithm>
 #include <iostream>
 
 namespace KthLargestSumInABinaryTree {
@@ -21,7 +22,7 @@ namespace KthLargestSumInABinaryTree {
                 rowSum.push_back(sum);
             }
             std::nth_element(rowSum.begin(), rowSum.begin() + k - 1,
-                             rowSum.end(), std::greater<long long>());
+                             rowSum.end(), std::greater<>());
             return (k > rowSum.size()) ? -1 : rowSum[k - 1];
         }
     };
