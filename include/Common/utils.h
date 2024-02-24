@@ -7,7 +7,7 @@ extern std::string serialize(const std::vector<int>& vec);
 
 extern std::string serialize(const std::vector<std::vector<int>>& vec);
 
-extern std::vector<std::string_view> stringSplit(
+extern std::vector<std::string_view> split(
     const std::string_view& str,
     const std::string& delim
 );

@@ -26,7 +26,7 @@ std::string serialize(Node* root) {
 Node* deserializeNode(const std::string& str) {
     if (str == "[]") return nullptr;
     auto s = str.substr(1, str.length() - 2);
-    auto&& items = stringSplit(s, ",");
+    auto&& items = split(s, ",");
     Node* root = new Node(std::stoi(std::string(items[0])));
     int cnt = 2;
     std::queue<Node*> que;

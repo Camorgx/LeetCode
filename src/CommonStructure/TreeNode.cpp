@@ -83,7 +83,7 @@ TreeNode* find(TreeNode* root, int val) {
 TreeNode* deserializeTreeNode(const std::string& str) {
     if (str == "[]") return nullptr;
     auto s = str.substr(1, str.length() - 2);
-    auto&& items = stringSplit(s, ",");
+    auto&& items = split(s, ",");
     queue<TreeNode*> que;
     auto* root = new TreeNode(std::stoi(std::string(items[0])));
     que.push(root);

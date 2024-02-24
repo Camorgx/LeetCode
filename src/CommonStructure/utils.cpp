@@ -1,6 +1,4 @@
-#include "Common/utils.h"
-
-#include <sstream>
+#include "Common/utils.h"\
 
 std::string serialize(const std::vector<int>& vec) {
     std::string out = "[";
@@ -22,7 +20,7 @@ std::string serialize(const std::vector<std::vector<int>>& vec) {
     return res;
 }
 
-std::vector<std::string_view> stringSplit(const std::string_view& str, const std::string& delim) {
+std::vector<std::string_view> split(const std::string_view& str, const std::string& delim) {
     size_t previous = 0;
     size_t current = str.find_first_of(delim);
     std::vector<std::string_view> elems;
@@ -39,7 +37,7 @@ std::vector<std::string_view> stringSplit(const std::string_view& str, const std
 
 std::vector<int> deserializeVector1d(const std::string_view& str) {
     auto s = str.substr(1, str.length() - 2);
-    auto&& items = stringSplit(s, ",");
+    auto&& items = split(s, ",");
     std::vector<int> res;
     for (const auto& item: items) {
         int val;
