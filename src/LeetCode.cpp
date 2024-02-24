@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    KthLargestSumInABinaryTree::runTest();
+    ClosestNodesQueriesInABinarySearchTree::runTest();
     return 0;
 }
