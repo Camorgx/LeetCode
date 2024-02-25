@@ -71,3 +71,7 @@ namespace KthLargestSumInABinaryTree {
 namespace ClosestNodesQueriesInABinarySearchTree {
     extern void runTest();
 }
+
+namespace LowestCommonAncestorOfABinarySearchTree {
+    extern void runTest();
+}

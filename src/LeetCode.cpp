@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    ClosestNodesQueriesInABinarySearchTree::runTest();
+    LowestCommonAncestorOfABinarySearchTree::runTest();
     return 0;
 }
