@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    LowestCommonAncestorOfABinarySearchTree::runTest();
+    RangeSumOfBst::runTest();
     return 0;
 }

@@ -75,3 +75,7 @@ namespace ClosestNodesQueriesInABinarySearchTree {
 namespace LowestCommonAncestorOfABinarySearchTree {
     extern void runTest();
 }
+
+namespace RangeSumOfBst {
+    extern void runTest();
+}
