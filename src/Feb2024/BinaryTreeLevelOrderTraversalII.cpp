@@ -1,6 +1,7 @@
 // https://leetcode.cn/problems/binary-tree-level-order-traversal-ii
 #include "Common.h"
 
+#include <algorithm>
 #include <iostream>
 
 namespace BinaryTreeLevelOrderTraversalII {
