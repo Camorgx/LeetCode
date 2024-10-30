@@ -1,6 +1,6 @@
 ﻿#include "LeetCode.h"
 
 int main() {
-    RangeSumOfBst::runTest();
+    LexicograhicallySmallestStringAfterASwap::runTest();
     return 0;
 }
